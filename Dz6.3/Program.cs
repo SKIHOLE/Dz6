@@ -30,31 +30,27 @@ namespace Dz6._3
         }
         public class Notes
         {
-            private string[] List = new string[0];
+            private List<string> notes = new List<string>();
             public void Add(string note)
             {
-                List = new string[List.Length+1];
-                List[List.Length] = note;
+                notes.Add(note);
             }
 
             public void Remove(int index)
             {
-                List = new string[List.Length - 1];
-                for (int i = index; i < List.Length - 1; i++)
-                {
-                    List[i] = List[i + 1];
-                }
+                notes.RemoveAt(index);
             }
 
             public void Show()
             {
                 Console.WriteLine("Замітки:");
-                for (int i = 0; i < List.Length; i++)
+                for (int i = 0; i < notes.Count; i++)
                 {
-                    Console.WriteLine(i + 1 + ". " + List[i]);
+                    Console.WriteLine(i + 1 + ". " + notes[i]);
                 }
             }
         }
     }
-  }
+    }
+  
 
