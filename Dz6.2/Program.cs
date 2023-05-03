@@ -12,4 +12,11 @@ namespace Dz6._2
         {
         }
     }
+    static class FindAndReplaceManager
+    {
+        static void FindNext(string str)
+        {
+            Console.WriteLine("Пошук рядка : " + str);
+        }
+    }
 }
