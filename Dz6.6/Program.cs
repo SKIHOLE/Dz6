@@ -6,6 +6,8 @@ namespace Dz6._6
     {
         static void Main(string[] args)
         {
+            int a = 5, b = 2; if (a > 10 & ++b < 3) { a++; }
+            Console.Write("a={0} ", a); Console.Write("b={0}", b);
             Calculator.Number = 0;
             Calculator.Add(1, 23, 4.5, 44);
             Calculator.Divide(1, 33, 2);
@@ -13,6 +15,7 @@ namespace Dz6._6
             Calculator.Multiply(21, 3);
             Console.WriteLine(Calculator.Number);
             Console.ReadKey();
+            
         }
     }
     static class Calculator

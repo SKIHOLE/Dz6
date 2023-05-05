@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Dz6._2
 {
@@ -8,11 +9,12 @@ namespace Dz6._2
         {
         }
     }
-    static class FindAndReplaceManager
+    static public class Book
     {
-        public static void FindNext(string str)
+        static public void FindNext(string str)
         {
             Console.WriteLine("Пошук рядка : " + str);
         }
-    }
+        
+}
 }
